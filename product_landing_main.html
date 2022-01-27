@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="product_landing_style.css">
+</head>
+<body>
+<header id="header">
+  <img src="https://i.ibb.co/yN04sq7/3-D41-FACD-5096-408-C-A7-CE-749-A82-B19385.jpg" alt="Peter Serafinowicz show label" id="header-img">
+  <nav id="nav-bar">
+    <img src="https://i.ibb.co/mDPzxsr/5557366-B-C2-E7-4-DD7-A74-B-45419-C3-ED424.jpg" alt="menu" id="menu-button";>
+    <img src="https://i.ibb.co/Ttbkdkf/61588-ED6-80-E3-44-BE-BA4-E-749447544-C6-F.jpg" id="open-menu" onclick=(toggleOptions())></img>
+    <a class="nav-link" id="l-product" href="#product" target="_self">
+      <p>PRODUCT</p>
+    </a>
+    <a class="nav-link" id="l-features" href="#features" target="_self">
+      <p>FEATURES</p>
+    </a>
+    <a class="nav-link" id="l-pricing" href="#selection" target="_self">
+      <p>PRICING</p>
+    </a>
+  </nav>
+</header>
+<br><br><br><br>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+  <h1 style="text-align:center">Join our mailing list for updates</h1>
+  <input name="email" type="email" id="email" required placeholder="Your email address"/>
+  <input name="submit" type="submit" id="submit" value="Join Now"/>
+</form>
+<br>
+<div id="product">
+  <br><br><br><br>
+  <p>Say goodbye to daily stains and dirty surfaces with the all new kitchen gun.</p>
+  <iframe id="video" width="560px" height="315px" src="https://www.youtube.com/embed/6-7NDP8V-6A"></iframe>
+</div>
+
+<div id="features">
+<br><br><br><br>
+  <h2>Feel the Difference</h2>
+  <p>Kitchen gun is the solution for all your cleaning needs. From dirty dishes to dirty floor tiles, Kitchen Gun makes cleaning easy.</p>
+  <br>
+  <h2>Money-back Guarantee</h2>
+  <p>If you are dissatisfied with your kitchen gun, you can claim a full refund and all returns will covered.</p>
+  <br>
+  <h2>Free Shipping</h2>
+  <p>Enjoy free one hour shipping on all purchases.</p>
+</div>
+<br>
+<br>
+<div id="pricing">
+  <h1>Order Now</h1>
+  <div id="selection">
+    <div class= "option" id="left-arrow">
+      <img src="https://i.ibb.co/ZgZxnqH/2154-C4-B1-0-DE9-40-C5-99-B3-6-E65-C62-F4-FBD.png" style="width:100%;border:none;" onclick="switchProduct('l');">
+    </div>
+    <div class="option" id="basic">
+      <h2>Basic Package</h2>
+      <h3>For easy cleaning</h3>
+      <h3>Two extra clips included</h3>
+      <h3>£400</h3>
+      <img src="https://i.ibb.co/kDm4bjf/78-DF760-B-C71-B-4-AE5-9359-39-C5084-F2-E70.jpg">
+      <br>
+      <button class="buy-button">BUY</button>
+    </div>
+    <div class="option" id="deluxe">
+      <h2>Deluxe Package</h2>
+      <h3>For heavy duty cleaning</h3>
+      <h3>Includes red dot sight</h3>
+      <h3>£950</h3>
+      <img src="https://i.ibb.co/WPm1zJL/A1-E8613-A-399-D-4-B0-F-B17-E-AC71479-C5440.jpg">
+      <br>
+      <button class="buy-button">BUY</button>
+    </div>
+    <div class="option" id="ultimate">
+      <h2>Ultimate Package</h2>
+      <h3>For the total annihilation of all dirt</h3>
+      <h3>Belt fed</h3>
+      <h3>£2000</h3>
+      <img src="https://i.ibb.co/D9xHYnf/964-BEC58-A246-4-F66-AFB1-5-D92-B1629-C0-B.jpg">
+      <br>
+      <button class="buy-button">BUY</button>
+  </div>
+  <div class="option" id="right-arrow">
+    <img src="https://i.ibb.co/Gc0TtNH/93-DC9-B94-4-A1-B-41-B3-92-C6-51-B662-D65318.png" style="width:100%;border:none;" onclick="switchProduct('r')">
+  </div>
+</div>
+<footer id="footer">
+  <p>Disclaimer: The Kitchen Gun is not a real product. It was featured as a joke on the Peter Serafinowicz Show. This page was created for the purpose of web-development practice.</p>
+</footer>
+<script src="product_landing.js"></script>
+</body>
